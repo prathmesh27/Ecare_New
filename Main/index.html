@@ -29,13 +29,13 @@
          <!-- Helpers -->
          <!-- /snippets/social-meta-tags.liquid -->
          <meta property="og:type" content="website">
-         <meta property="og:title" content="Bardy - Beard Oil eCommerce Shopify Theme">
+      <!--    <meta property="og:title" content="Bardy - Beard Oil eCommerce Shopify Theme">
          <meta property="og:description" content="">
          <meta property="og:url" content="index.html">
          <meta property="og:site_name" content="Bardy - Beard Oil eCommerce Shopify Theme">
          <meta name="twitter:card" content="summary">
          <meta name="twitter:title" content="Bardy - Beard Oil eCommerce Shopify Theme">
-         <meta name="twitter:description" content="">
+         <meta name="twitter:description" content=""> -->
          <!-- CSS -->
          <link href="../cdn.shopify.com/s/files/1/0114/0994/8731/t/11/assets/timber.scss2129.css?v=18136201930983889848" rel="stylesheet" type="text/css" media="all" />
          <link href="../cdn.shopify.com/s/files/1/0114/0994/8731/t/11/assets/vendors2e5c.css?v=13037289040117020567" rel="stylesheet" type="text/css" media="all" />
@@ -47,6 +47,8 @@
          <link href="../cdn.shopify.com/s/files/1/0114/0994/8731/t/11/assets/skin-theme2b1a.css?v=5336561448832073469" rel="stylesheet" type="text/css" media="all" />
          <!-- Call your theme color CSS here -->
          <link href="../cdn.shopify.com/s/files/1/0114/0994/8731/t/11/assets/theme-color2408.css?v=10165101979186961600" rel="stylesheet" type="text/css" media="all" />
+         <link rel="stylesheet" type="text/css" href="css/slick-theme.css"> 
+          <link rel="stylesheet" type="text/css" href="css/slick.css"> 
          <!-- Header hook for plugins -->
          <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script>
          <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/11409948731/digital_wallets/dialog">
@@ -280,7 +282,7 @@
             -ms-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
             -o-box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
             box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
-            padding: .5rem;
+            padding: 2.5rem 0;
             width: 100%;
             margin: 0;
             /* margin-right: 22px; */
@@ -912,6 +914,7 @@
          <link rel="stylesheet" media="screen" href="../cdn.shopify.com/s/files/1/0114/0994/8731/t/11/compiled_assets/styles8196.css?4217">
          <script type="text/javascript" src="js/slick.min.js"></script>
          <script id="sections-script" data-sections="about-info,banner,subscribe,featured-product,brand-logo,header,service" defer="defer" src="../cdn.shopify.com/s/files/1/0114/0994/8731/t/11/compiled_assets/scripts8196.js?4217"></script>
+         <script type="" src="js/slick.min.js"></script>
          <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
          <!-- /snippets/oldIE-js.liquid -->
          <!--[if lt IE 9]>
@@ -1131,7 +1134,7 @@
                <div id="shopify-section-1538889093339" class="shopify-section">
                   <!-- Hero Section Start -->
                   <div class="hero-slider" id="section-1538889093339" >
-                     <div class="hero-item" style="background-image: url(img/slider2.jpg)">
+                     <div class="hero-item" style="background-image: url(img/slider2.jpg);height:   100vh">
                         <div class="container">
                            <div id="block-1538889093339-0" class="row align-items-center ">
                               <div class="col-md-7 col-6">
@@ -1149,7 +1152,7 @@
                            </div>
                         </div>
                      </div>
-                     <div class="hero-item" style="background-image: url(img/banner1.png)">
+                     <div class="hero-item" style="background-image: url(img/banner1.png);height: 100vh">
                         <div class="container">
                            <div id="block-1538889093339-1" class="row align-items-center ">
                               <div class="col-md-5 col-6">
@@ -1261,11 +1264,20 @@
                         </div>
                      </div>
                      <style type="text/css">
+                        .blog-img:hover{  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+                                -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+                        }
+
                          .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 200px;
+  width: 100%;
+  height: 460px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      height: 386px;
+    perspective: 1000px;
+    margin: auto;
 }
 
 /* This container is needed to position the front and back side */
@@ -1395,23 +1407,48 @@
                            </div>
                         </div>
                      </div>
-                    <div class="category_"  style="margin-top: 4rem;margin-bottom:  13rem">
+                    <div class="category_"  style="margin-top: 4rem;margin-bottom:  9rem">
 
                         <div class="container">
-                            <div class="heading_">
-                               <h1>Categories</h1>
-                               <div class="back_layer">Categories</div>
+                            <div class="heading_ ">
+                               <h1>Solutions</h1>
+                               <div class="back_layer">Solutions</div>
                             </div>
-                            <div class="row mt-3">
+                            <div class="row mt-3 solutions_carousel hero-slider">
+                                <div class="col-md-4">
+                                    <div class="flip-card">
+                                        <div class="flip-card-inner">
+                                            <div class="flip-card-front">
+                                                <img src="img/HandandBodyLotion.jpeg" alt="HandandBodyLotion" style="width:300px;height:300px;">
+                                                    <div class="py-2">
+                                                            <h2 style="font-size: 20px;">Hand Body Lotion</h2>
+                                                            <button class="btn_ btn">Shop Now    </button>
+                                                    </div>
+                                            </div>
+                                            <div class="flip-card-back">
+                                               <div class="about-content">
+                                                      <h2>Hand Body Lotion</h2>
+                                                      <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                                      <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                                      <button class="btn_ btn">SHOP NOW</button>
+                                                   </div>
+                                            </div>
+                                         </div>
+                                    </div>
+                                </div>
                                 <div class="col-md-4">
                                     <div class="flip-card">
                                       <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                          <img src="img/img1.webp" alt="Avatar" style="width:300px;height:300px;">
+                                          <img src="img/handwash.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                                            <div class="py-2">
+                                                            <h2 style="font-size: 20px;">Hand & Body Wash</h2>
+                                                            <button class="btn_ btn">Shop Now    </button>
+                                            </div>
                                         </div>
                                         <div class="flip-card-back">
                                            <div class="about-content">
-                                                  <h2>Face Care</h2>
+                                                  <h2>Hand & Body Wash</h2>
                                                   <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
                                                   <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
                                                   <button class="btn_ btn">SHOP NOW</button>
@@ -1424,11 +1461,15 @@
                                     <div class="flip-card">
                                       <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                          <img src="img/img1.webp" alt="Avatar" style="width:300px;height:300px;">
+                                          <img src="img/shampoo.jpeg" alt="shampoo" style="width:300px;height:300px;">
+                                          <div class="py-2">
+                                                            <h2 style="font-size: 20px;">Scalp & Hair Shampoo</h2>
+                                                            <button class="btn_ btn">Shop Now    </button>
+                                            </div>
                                         </div>
                                         <div class="flip-card-back">
                                            <div class="about-content">
-                                                  <h2>Hair Care</h2>
+                                                  <h2>Scalp & Hair Shampoo</h2>
                                                   <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
                                                   <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
                                                   <button class="btn_ btn">SHOP NOW</button>
@@ -1441,11 +1482,57 @@
                                     <div class="flip-card">
                                       <div class="flip-card-inner">
                                         <div class="flip-card-front">
-                                          <img src="img/img1.webp" alt="Avatar" style="width:300px;height:300px;">
+                                          <img src="img/shampoo.jpeg" alt="shampoo" style="width:300px;height:300px;">
+                                          <div class="py-2">
+                                                            <h2 style="font-size: 20px;">Skin Care</h2>
+                                                            <button class="btn_ btn">Shop Now    </button>
+                                            </div>
                                         </div>
                                         <div class="flip-card-back">
                                            <div class="about-content">
-                                                  <h2>Skin Care</h2>
+                                                  <h2>Scalp & Hair Shampoo</h2>
+                                                  <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                                  <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                                  <button class="btn_ btn">SHOP NOW</button>
+                                               </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="flip-card">
+                                      <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                          <img src="img/shampoo.jpeg" alt="shampoo" style="width:300px;height:300px;">
+                                          <div class="py-2">
+                                                            <h2 style="font-size: 20px;">Hair Care</h2>
+                                                            <button class="btn_ btn">Shop Now    </button>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back">
+                                           <div class="about-content">
+                                                  <h2>Hair care</h2>
+                                                  <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                                  <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
+                                                  <button class="btn_ btn">SHOP NOW</button>
+                                               </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="flip-card">
+                                      <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                          <img src="img/shampoo.jpeg" alt="shampoo" style="width:300px;height:300px;">
+                                          <div class="py-2">
+                                                            <h2 style="font-size: 20px;">Body Care</h2>
+                                                            <button class="btn_ btn">Shop Now    </button>
+                                            </div>
+                                        </div>
+                                        <div class="flip-card-back">
+                                           <div class="about-content">
+                                                  <h2>Body care</h2>
                                                   <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
                                                   <p>Lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiu</p>
                                                   <button class="btn_ btn">SHOP NOW</button>
@@ -1457,7 +1544,7 @@
                             </div>
                         </div>
                     </div>
-
+                    <div class="fp" style="display: unset;clear: both;position: unset;">
                     <ul class="nav nav-tabs" id="myTab" role="tablist" style="border:none;margin: 1rem auto 2rem;justify-content:    center; ">
                       <li class="nav-item" role="presentation" style=" ">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Featured Products</a>
@@ -1473,18 +1560,18 @@
                       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                           <!-- Featured -->
                            <div data-section="FeaturedProduct" class="product-section section" id="section-1538994012147">
-                              <div class="container">
+                              <div class="container ">
                                  <!-- Section Title Start -->
                                  <div class="row">
                                     <div class="col">
                                        <div class="section-title mb-60 mb-xs-40  text-center">
-                                          <h1>Featured Products</h1>
-                                          <p>Some of our customers say that they trust us and buy our product without any hesitation because they believe us and always happy to buy our product.</p>
+                                         <!--  <h1>Featured Products</h1>
+                                          <p>Some of our customers say that they trust us and buy our product without any hesitation because they believe us and always happy to buy our product.</p> -->
                                        </div>
                                     </div>
                                  </div>
                                  <!-- Section Title End -->
-                                 <div class="row">
+                                 <div class="row solutions_carousel">
                                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-30">
                                        <!-- Product Item Start -->
                                        <div class="product-item 17220765515835">
@@ -1752,6 +1839,174 @@
                                        </div>
                                        <!-- Product Item End -->
                                     </div>
+
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-30">
+                                       <!-- Product Item Start -->
+                                       <div class="product-item 17220772888635">
+                                          <!-- Image -->
+                                          <div class="product-image">
+                                             <!-- Image -->
+                                             <a class="image" href="img/product.png">
+                                             <img class="popup_cart_image lazyload" data-src="img/product.png" alt="Countdown product" src="">
+                                             </a>
+                                             <div class="sale-product">
+                                             </div>
+                                             <!-- Product Action -->
+                                             <div class="product-action">
+                                                <a href="javascript:void(0);" onclick="" class="cart">
+                                                <span class="icon"><i class="bardy bardy-shopping-cart"></i><i class="hover-icon bardy bardy-shopping-cart"></i></span>
+                                                </a>
+                                                <a class="wishlist" href="/account/login" title="Wishlist">
+                                                <span class="icon"><i class="bardy bardy-wishlist"></i><i class="hover-icon bardy bardy-wishlist"></i></span>
+                                                </a>
+                                                <div>
+                                                   <a class="quickview" title="Quick View" data-toggle="modal" data-target="#quickViewModal" href="javascript:void(0);" onclick="quiqview('countdown-product')"><span class="icon"><i class="bardy bardy-quick-view"></i><i class="hover-icon bardy bardy-quick-view"></i></span>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div data-countdown="2019/08/24">
+                                                <div class="countdown-area">
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">days</div>
+                                                   </div>
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">Hour</div>
+                                                   </div>
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">Mint</div>
+                                                   </div>
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">Sec</div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Content -->
+                                          <div class="product-content">
+                                             <div class="head">
+                                                <!-- Price -->
+                                                <div class="right4444">
+                                                   <span class="price"><span class="money" data-currency-usd="$39.00">$39.00</span> 
+                                                   <span class="old"><span class="money" data-currency-usd="$60.00">$60.00</span></span>
+                                                   </span>
+                                                </div>
+                                                <!-- Title & Ratting -->
+                                                <div class="left44444">
+                                                   <h4 class="title popup_cart_title"><a href="">Countdown product</a></h4>
+                                                   <span class="ratting">
+                                                   <span class="spr-badge" id="spr_badge_1772821741627" data-rating="0.0"><span class="spr-starrating spr-badge-starrating"><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i></span><span class="spr-badge-caption">No reviews</span>
+                                                   </span>
+                                                   </span>
+                                                </div>
+                                             </div>
+                                             <div class="body">
+                                                <div class="product-description">
+                                                   <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                                </div>
+                                                <!-- Product Action -->
+                                                <div class="product-action">
+                                                   <a href="javascript:void(0);" onclick="Shopify.addItem(17220772888635, 1); return false;" class="cart">
+                                                   <span class="icon"><i class="bardy bardy-shopping-cart"></i><i class="hover-icon bardy bardy-shopping-cart"></i></span>
+                                                   </a>
+                                                   <a class="wishlist" href="/account/login" title="Wishlist">
+                                                   <span class="icon"><i class="bardy bardy-wishlist"></i><i class="hover-icon bardy bardy-wishlist"></i></span>
+                                                   </a>
+                                                   <a class="quickview" title="Quick View" data-toggle="modal" data-target="#quickViewModal" href="javascript:void(0);" onclick="quiqview('countdown-product')"><span class="icon"><i class="bardy bardy-quick-view"></i><i class="hover-icon bardy bardy-quick-view"></i></span>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- Product Item End -->
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-30">
+                                       <!-- Product Item Start -->
+                                       <div class="product-item 17220772888635">
+                                          <!-- Image -->
+                                          <div class="product-image">
+                                             <!-- Image -->
+                                             <a class="image" href="img/product.png">
+                                             <img class="popup_cart_image lazyload" data-src="img/product.png" alt="Countdown product" src="">
+                                             </a>
+                                             <div class="sale-product">
+                                             </div>
+                                             <!-- Product Action -->
+                                             <div class="product-action">
+                                                <a href="javascript:void(0);" onclick="" class="cart">
+                                                <span class="icon"><i class="bardy bardy-shopping-cart"></i><i class="hover-icon bardy bardy-shopping-cart"></i></span>
+                                                </a>
+                                                <a class="wishlist" href="/account/login" title="Wishlist">
+                                                <span class="icon"><i class="bardy bardy-wishlist"></i><i class="hover-icon bardy bardy-wishlist"></i></span>
+                                                </a>
+                                                <div>
+                                                   <a class="quickview" title="Quick View" data-toggle="modal" data-target="#quickViewModal" href="javascript:void(0);" onclick="quiqview('countdown-product')"><span class="icon"><i class="bardy bardy-quick-view"></i><i class="hover-icon bardy bardy-quick-view"></i></span>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div data-countdown="2019/08/24">
+                                                <div class="countdown-area">
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">days</div>
+                                                   </div>
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">Hour</div>
+                                                   </div>
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">Mint</div>
+                                                   </div>
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">Sec</div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Content -->
+                                          <div class="product-content">
+                                             <div class="head">
+                                                <!-- Price -->
+                                                <div class="right4444">
+                                                   <span class="price"><span class="money" data-currency-usd="$39.00">$39.00</span> 
+                                                   <span class="old"><span class="money" data-currency-usd="$60.00">$60.00</span></span>
+                                                   </span>
+                                                </div>
+                                                <!-- Title & Ratting -->
+                                                <div class="left44444">
+                                                   <h4 class="title popup_cart_title"><a href="">Countdown product</a></h4>
+                                                   <span class="ratting">
+                                                   <span class="spr-badge" id="spr_badge_1772821741627" data-rating="0.0"><span class="spr-starrating spr-badge-starrating"><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i></span><span class="spr-badge-caption">No reviews</span>
+                                                   </span>
+                                                   </span>
+                                                </div>
+                                             </div>
+                                             <div class="body">
+                                                <div class="product-description">
+                                                   <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                                </div>
+                                                <!-- Product Action -->
+                                                <div class="product-action">
+                                                   <a href="javascript:void(0);" onclick="Shopify.addItem(17220772888635, 1); return false;" class="cart">
+                                                   <span class="icon"><i class="bardy bardy-shopping-cart"></i><i class="hover-icon bardy bardy-shopping-cart"></i></span>
+                                                   </a>
+                                                   <a class="wishlist" href="/account/login" title="Wishlist">
+                                                   <span class="icon"><i class="bardy bardy-wishlist"></i><i class="hover-icon bardy bardy-wishlist"></i></span>
+                                                   </a>
+                                                   <a class="quickview" title="Quick View" data-toggle="modal" data-target="#quickViewModal" href="javascript:void(0);" onclick="quiqview('countdown-product')"><span class="icon"><i class="bardy bardy-quick-view"></i><i class="hover-icon bardy bardy-quick-view"></i></span>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- Product Item End -->
+                                    </div>
                                  </div>
                                  <!-- Product Slider 4 Column Start-->
                               </div>
@@ -1765,13 +2020,13 @@
                                  <div class="row">
                                     <div class="col">
                                        <div class="section-title mb-60 mb-xs-40  text-center">
-                                          <h1>Popular Products</h1>
-                                          <p>Some of our customers say that they trust us and buy our product without any hesitation because they believe us and always happy to buy our product.</p>
+<!--                                           <h1>Popular Products</h1>
+                                          <p>Some of our customers say that they trust us and buy our product without any hesitation because they believe us and always happy to buy our product.</p> -->
                                        </div>
                                     </div>
                                  </div>
                                  <!-- Section Title End -->
-                                 <div class="row">
+                                 <div class="row solutions_carousel">
                                     <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-30">
                                        <!-- Product Item Start -->
                                        <div class="product-item 17220765515835">
@@ -1826,6 +2081,90 @@
                                                    <span class="icon"><i class="bardy bardy-wishlist"></i><i class="hover-icon bardy bardy-wishlist"></i></span>
                                                    </a>
                                                    <a class="quickview" title="Quick View" data-toggle="modal" data-target="#quickViewModal" href="javascript:void(0);" onclick="quiqview('vortahole-valohoi')"><span class="icon"><i class="bardy bardy-quick-view"></i><i class="hover-icon bardy bardy-quick-view"></i></span>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- Product Item End -->
+                                    </div>
+
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-30">
+                                       <!-- Product Item Start -->
+                                       <div class="product-item 17220772888635">
+                                          <!-- Image -->
+                                          <div class="product-image">
+                                             <!-- Image -->
+                                             <a class="image" href="img/product.png">
+                                             <img class="popup_cart_image lazyload" data-src="img/product.png" alt="Countdown product" src="">
+                                             </a>
+                                             <div class="sale-product">
+                                             </div>
+                                             <!-- Product Action -->
+                                             <div class="product-action">
+                                                <a href="javascript:void(0);" onclick="" class="cart">
+                                                <span class="icon"><i class="bardy bardy-shopping-cart"></i><i class="hover-icon bardy bardy-shopping-cart"></i></span>
+                                                </a>
+                                                <a class="wishlist" href="/account/login" title="Wishlist">
+                                                <span class="icon"><i class="bardy bardy-wishlist"></i><i class="hover-icon bardy bardy-wishlist"></i></span>
+                                                </a>
+                                                <div>
+                                                   <a class="quickview" title="Quick View" data-toggle="modal" data-target="#quickViewModal" href="javascript:void(0);" onclick="quiqview('countdown-product')"><span class="icon"><i class="bardy bardy-quick-view"></i><i class="hover-icon bardy bardy-quick-view"></i></span>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div data-countdown="2019/08/24">
+                                                <div class="countdown-area">
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">days</div>
+                                                   </div>
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">Hour</div>
+                                                   </div>
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">Mint</div>
+                                                   </div>
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">Sec</div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Content -->
+                                          <div class="product-content">
+                                             <div class="head">
+                                                <!-- Price -->
+                                                <div class="right4444">
+                                                   <span class="price"><span class="money" data-currency-usd="$39.00">$39.00</span> 
+                                                   <span class="old"><span class="money" data-currency-usd="$60.00">$60.00</span></span>
+                                                   </span>
+                                                </div>
+                                                <!-- Title & Ratting -->
+                                                <div class="left44444">
+                                                   <h4 class="title popup_cart_title"><a href="">Countdown product</a></h4>
+                                                   <span class="ratting">
+                                                   <span class="spr-badge" id="spr_badge_1772821741627" data-rating="0.0"><span class="spr-starrating spr-badge-starrating"><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i></span><span class="spr-badge-caption">No reviews</span>
+                                                   </span>
+                                                   </span>
+                                                </div>
+                                             </div>
+                                             <div class="body">
+                                                <div class="product-description">
+                                                   <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                                </div>
+                                                <!-- Product Action -->
+                                                <div class="product-action">
+                                                   <a href="javascript:void(0);" onclick="Shopify.addItem(17220772888635, 1); return false;" class="cart">
+                                                   <span class="icon"><i class="bardy bardy-shopping-cart"></i><i class="hover-icon bardy bardy-shopping-cart"></i></span>
+                                                   </a>
+                                                   <a class="wishlist" href="/account/login" title="Wishlist">
+                                                   <span class="icon"><i class="bardy bardy-wishlist"></i><i class="hover-icon bardy bardy-wishlist"></i></span>
+                                                   </a>
+                                                   <a class="quickview" title="Quick View" data-toggle="modal" data-target="#quickViewModal" href="javascript:void(0);" onclick="quiqview('countdown-product')"><span class="icon"><i class="bardy bardy-quick-view"></i><i class="hover-icon bardy bardy-quick-view"></i></span>
                                                    </a>
                                                 </div>
                                              </div>
@@ -2052,13 +2391,13 @@
                                      <div class="row">
                                         <div class="col">
                                            <div class="section-title mb-60 mb-xs-40  text-center">
-                                              <h1>New Products</h1>
-                                              <p>Some of our customers say that they trust us and buy our product without any hesitation because they believe us and always happy to buy our product.</p>
+                                             <!--  <h1>New Products</h1>
+                                              <p>Some of our customers say that they trust us and buy our product without any hesitation because they believe us and always happy to buy our product.</p> -->
                                            </div>
                                         </div>
                                      </div>
                                      <!-- Section Title End -->
-                                     <div class="row">
+                                     <div class="row solutions_carousel">
                                         <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-30">
                                            <!-- Product Item Start -->
                                            <div class="product-item 17220765515835">
@@ -2243,6 +2582,90 @@
                                            </div>
                                            <!-- Product Item End -->
                                         </div>
+
+                                    <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-30">
+                                       <!-- Product Item Start -->
+                                       <div class="product-item 17220772888635">
+                                          <!-- Image -->
+                                          <div class="product-image">
+                                             <!-- Image -->
+                                             <a class="image" href="img/product.png">
+                                             <img class="popup_cart_image lazyload" data-src="img/product.png" alt="Countdown product" src="">
+                                             </a>
+                                             <div class="sale-product">
+                                             </div>
+                                             <!-- Product Action -->
+                                             <div class="product-action">
+                                                <a href="javascript:void(0);" onclick="" class="cart">
+                                                <span class="icon"><i class="bardy bardy-shopping-cart"></i><i class="hover-icon bardy bardy-shopping-cart"></i></span>
+                                                </a>
+                                                <a class="wishlist" href="/account/login" title="Wishlist">
+                                                <span class="icon"><i class="bardy bardy-wishlist"></i><i class="hover-icon bardy bardy-wishlist"></i></span>
+                                                </a>
+                                                <div>
+                                                   <a class="quickview" title="Quick View" data-toggle="modal" data-target="#quickViewModal" href="javascript:void(0);" onclick="quiqview('countdown-product')"><span class="icon"><i class="bardy bardy-quick-view"></i><i class="hover-icon bardy bardy-quick-view"></i></span>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                             <div data-countdown="2019/08/24">
+                                                <div class="countdown-area">
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">days</div>
+                                                   </div>
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">Hour</div>
+                                                   </div>
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">Mint</div>
+                                                   </div>
+                                                   <div class="single-countdown">
+                                                      <div class="count-number">00</div>
+                                                      <div class="count-title">Sec</div>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <!-- Content -->
+                                          <div class="product-content">
+                                             <div class="head">
+                                                <!-- Price -->
+                                                <div class="right4444">
+                                                   <span class="price"><span class="money" data-currency-usd="$39.00">$39.00</span> 
+                                                   <span class="old"><span class="money" data-currency-usd="$60.00">$60.00</span></span>
+                                                   </span>
+                                                </div>
+                                                <!-- Title & Ratting -->
+                                                <div class="left44444">
+                                                   <h4 class="title popup_cart_title"><a href="">Countdown product</a></h4>
+                                                   <span class="ratting">
+                                                   <span class="spr-badge" id="spr_badge_1772821741627" data-rating="0.0"><span class="spr-starrating spr-badge-starrating"><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i><i class="spr-icon spr-icon-star-empty"></i></span><span class="spr-badge-caption">No reviews</span>
+                                                   </span>
+                                                   </span>
+                                                </div>
+                                             </div>
+                                             <div class="body">
+                                                <div class="product-description">
+                                                   <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                                                </div>
+                                                <!-- Product Action -->
+                                                <div class="product-action">
+                                                   <a href="javascript:void(0);" onclick="Shopify.addItem(17220772888635, 1); return false;" class="cart">
+                                                   <span class="icon"><i class="bardy bardy-shopping-cart"></i><i class="hover-icon bardy bardy-shopping-cart"></i></span>
+                                                   </a>
+                                                   <a class="wishlist" href="/account/login" title="Wishlist">
+                                                   <span class="icon"><i class="bardy bardy-wishlist"></i><i class="hover-icon bardy bardy-wishlist"></i></span>
+                                                   </a>
+                                                   <a class="quickview" title="Quick View" data-toggle="modal" data-target="#quickViewModal" href="javascript:void(0);" onclick="quiqview('countdown-product')"><span class="icon"><i class="bardy bardy-quick-view"></i><i class="hover-icon bardy bardy-quick-view"></i></span>
+                                                   </a>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- Product Item End -->
+                                    </div>
                                         <div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-30">
                                            <!-- Product Item Start -->
                                            <div class="product-item 17220772888635">
@@ -2332,7 +2755,7 @@
                                </div>
                       </div>
                     </div>
-               
+                    </div>
                      <!-- testimonial -->
                      <section class="testimonial text-center">
                         <div class="container">
@@ -2382,7 +2805,7 @@
                               <div class="col-md-6">
                                  <div class="blog-inner">
                                     <div class="blog-img">
-                                       <img src="img/blog.jpg">
+                                       <img src="img/blog.jpg" style="  " class="   blog-img">
                                        <div class="date">
                                           23rd OCT 2020
                                        </div>
@@ -2412,6 +2835,9 @@
                                  </div>
                               </div>
                            </div>
+                           <div class=" my-4 text-center">
+                                 <button class="btn btn-round btn-lg btn-theme btn_" href="" tabindex="0">View More</button>
+                            </div>
                         </div>
                      </section>
                   </div>
@@ -2462,7 +2888,7 @@
                   <div class="brand-section"  id="section-1538997923031">
                      <div class="container">
                         <div class="row">
-                           <div class="brand-slider section">
+                           <div class=" section  solutions_carousel ">
                               <div class="brand-item col">
                                  <img src="../cdn.shopify.com/s/files/1/0114/0994/8731/files/brand-1142a.png?v=1538998029" alt="">
                               </div>
@@ -3191,12 +3617,57 @@
             </script>
             <script type="text/javascript">
                $('.carosuel_').slick({
-               dots: true,
+             
                infinite: true,
                speed: 500,
+               arrows:false,   
                fade: true,
+               autoplay: true,
+                 autoplaySpeed: 2000,  
                cssEase: 'linear'
                });
+                     $('.solutions_carousel').slick({
+                  dots: false,   
+                 autoplay: true,
+                 autoplaySpeed: 2000,  
+                 arrows:false, 
+                  infinite: false,
+                  speed: 300,
+                  slidesToShow: 4,
+                  // prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+                  //   nextArrow: '<button class="slide-arrow next-arrow"></button>',
+                  slidesToScroll:4,
+                  responsive: [
+                    {
+                      breakpoint: 1024,
+                      settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: false
+                      }
+                    },
+                    {
+                      breakpoint: 600,
+                      settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                      }
+                    },
+                    {
+                      breakpoint: 480,
+                      settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                      }
+                    }
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                  ]
+                });
+            </script>
+            <script type="text/javascript  ">
                
             </script>
          </div>
